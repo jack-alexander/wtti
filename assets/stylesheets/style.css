@@ -1,0 +1,239 @@
+body {
+  background-color: #E1E1E1;
+}
+
+.body-background {
+  background-color: #E1E1E1;
+}
+
+a {
+  color: #CA9A72;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000000;
+}
+
+p {
+  font-family: FuturaLT-book;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.video-wrapper {
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+img {
+  float: left;
+  display: flex;
+  width: 10rem;
+  padding-right: 1rem;
+}
+video {
+  width: 100%;
+  height: auto;
+  box-shadow: 20px 20px 50px 0px rgba(0,0,0,0.50);
+  background:transparent url('assets/images/big-placeholder.jpg') no-repeat 0 0;
+}
+
+em {
+  color: #CA9A72;
+}
+
+header {
+  height: 38rem;
+  background-color: #E1E1E1;
+  background-image: url('../images/hero-tile.png');
+  background: -moz-linear-gradient(top, rgba(225,225,225,0) 0%, rgba(225,225,225,1) 100%), url('../images/hero-tile.png') no-repeat;
+  background: -webkit-linear-gradient(top, rgba(225,225,225,0) 0%,rgba(225,225,225,1) 100%), url('../images/hero-tile.png') no-repeat;
+  background: linear-gradient(to bottom, rgba(225,225,225,0) 0%,rgba(225,225,225,1) 100%), url('../images/hero-tile.png') no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e1e1e1', endColorstr='#e1e1e1',GradientType=0 ), url('../images/hero-tile.png') no-repeat;
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #E1E1E1;
+}
+
+hr {
+  border: 0;
+  width: 100%;
+  height: 3px;
+  background: white;
+}
+h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+  font-family: FuturaLT-BoldOblique;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  max-width: 40rem;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+
+h2 {
+  font-family: FuturaLT-HeavyOblique;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  color: #CA9A72;
+  text-transform: capitalize;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40rem;
+  text-align: left;
+  display: block;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-family: FuturaLT-HeavyOblique;
+  color: #383838;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40rem;
+  text-align: left;
+}
+
+h4 {
+  font-family: FuturaLT-HeavyOblique;
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40rem;
+  text-align: left;
+}
+
+h5 {
+  font-family: FuturaLT-HeavyOblique;
+  font-size: 1rem;
+  color: #ffffff;
+  padding-bottom: 2rem;
+  line-height: 1.2rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40rem;
+  text-align: center;
+}
+
+h6 {
+  font-family: FuturaLT-HeavyOblique;
+  font-size: 1.2rem;
+  color: #CA9A72;
+  line-height: 1.5rem;
+  max-width: 30rem;
+  text-align: left;
+  display: block;
+  padding-left: 3rem;
+}
+
+ul {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+li:nth-child(even) {
+  background: #DFB694
+}
+
+li:nth-child(odd) {
+  background: #CA9A72
+}
+
+li {
+  display: block;
+  max-width: 20rem;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 3rem;
+}
+
+li a {
+  display: block;
+  max-width: 10rem;
+  padding-left: 1rem;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 3rem;
+  font-family: FuturaLT-BoldOblique;
+  color: black;
+}
+
+.header-welcome-big-box {
+  padding-top: 1rem;
+}
+
+.header-welcome-box {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 20rem;
+  background: #000000;
+  box-shadow: 20px 20px 50px 0px rgba(0,0,0,0.50);
+}
+
+.post {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40rem;
+  display: block;
+  background-color: #E1E1E1;
+}
+
+.post-content {
+  padding-top: 1rem;
+  float: left;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  float: left;
+}
+
+.footer p {
+  color: #ffffff;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer h2 {
+  padding-top: 2rem;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
