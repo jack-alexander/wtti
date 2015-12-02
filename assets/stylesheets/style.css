@@ -1,3 +1,77 @@
+/*Safe for both Desktop and Mobile*/
+
+@font-face {
+    font-family: 'futura_ltbold';
+    src: url('fonts/futuralt-bold-webfont.eot');
+    src: url('fonts/futuralt-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/futuralt-bold-webfont.woff2') format('woff2'),
+         url('fonts/futuralt-bold-webfont.woff') format('woff'),
+         url('fonts/futuralt-bold-webfont.ttf') format('truetype'),
+         url('fonts/futuralt-bold-webfont.svg#futura_ltbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'futura_ltboldoblique';
+    src: url('fonts/futuralt-boldoblique-webfont.eot');
+    src: url('fonts/futuralt-boldoblique-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/futuralt-boldoblique-webfont.woff2') format('woff2'),
+         url('fonts/futuralt-boldoblique-webfont.woff') format('woff'),
+         url('fonts/futuralt-boldoblique-webfont.ttf') format('truetype'),
+         url('fonts/futuralt-boldoblique-webfont.svg#futura_ltboldoblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'futura_ltbook';
+    src: url('fonts/futuralt-book-webfont.eot');
+    src: url('fonts/futuralt-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/futuralt-book-webfont.woff2') format('woff2'),
+         url('fonts/futuralt-book-webfont.woff') format('woff'),
+         url('fonts/futuralt-book-webfont.ttf') format('truetype'),
+         url('fonts/futuralt-book-webfont.svg#futura_ltbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'futura_ltbookoblique';
+    src: url('fonts/futuralt-bookoblique-webfont.eot');
+    src: url('fonts/futuralt-bookoblique-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/futuralt-bookoblique-webfont.woff2') format('woff2'),
+         url('fonts/futuralt-bookoblique-webfont.woff') format('woff'),
+         url('fonts/futuralt-bookoblique-webfont.ttf') format('truetype'),
+         url('fonts/futuralt-bookoblique-webfont.svg#futura_ltbookoblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'futura_ltheavy';
+    src: url('fonts/futuralt-heavy-webfont.eot');
+    src: url('fonts/futuralt-heavy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/futuralt-heavy-webfont.woff2') format('woff2'),
+         url('fonts/futuralt-heavy-webfont.woff') format('woff'),
+         url('fonts/futuralt-heavy-webfont.ttf') format('truetype'),
+         url('fonts/futuralt-heavy-webfont.svg#futura_ltheavy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'futura_ltheavyoblique';
+    src: url('fonts/futuralt-heavyoblique-webfont.eot');
+    src: url('fonts/futuralt-heavyoblique-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/futuralt-heavyoblique-webfont.woff2') format('woff2'),
+         url('fonts/futuralt-heavyoblique-webfont.woff') format('woff'),
+         url('fonts/futuralt-heavyoblique-webfont.ttf') format('truetype'),
+         url('fonts/futuralt-heavyoblique-webfont.svg#futura_ltheavyoblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
   background-color: #E1E1E1;
 }
@@ -12,58 +86,58 @@ a {
 }
 
 a:hover {
-  color: #000000;
+  color: #CA9A72;
 }
 
 p {
-  font-family: FuturaLT-book;
+  font-family: 'futura_ltbook',sans-serif;
   font-size: 1rem;
   line-height: 1.2rem;
-  max-width: 40rem;
   margin-left: auto;
   margin-right: auto;
-  display: block;
+}
+
+.navigation a:hover {
+          color: #ffffff;
 }
 
 .video-wrapper {
     max-width: 40rem;
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
 }
 
-img {
-  float: left;
-  display: flex;
-  width: 10rem;
-  padding-right: 1rem;
+.ipad-video-header {
+    max-width: 40rem;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
+
+.iphone-video-header {
+    max-width: 40rem;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
 video {
   width: 100%;
-  height: auto;
   box-shadow: 20px 20px 50px 0px rgba(0,0,0,0.50);
-  background:transparent url('assets/images/big-placeholder.jpg') no-repeat 0 0;
 }
 
 em {
   color: #CA9A72;
-}
-
-header {
-  height: 38rem;
-  background-color: #E1E1E1;
-  background-image: url('../images/hero-tile.png');
-  background: -moz-linear-gradient(top, rgba(225,225,225,0) 0%, rgba(225,225,225,1) 100%), url('../images/hero-tile.png') no-repeat;
-  background: -webkit-linear-gradient(top, rgba(225,225,225,0) 0%,rgba(225,225,225,1) 100%), url('../images/hero-tile.png') no-repeat;
-  background: linear-gradient(to bottom, rgba(225,225,225,0) 0%,rgba(225,225,225,1) 100%), url('../images/hero-tile.png') no-repeat;
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e1e1e1', endColorstr='#e1e1e1',GradientType=0 ), url('../images/hero-tile.png') no-repeat;
-  display: block;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-color: #E1E1E1;
+  font-style: normal;
 }
 
 hr {
@@ -72,10 +146,11 @@ hr {
   height: 3px;
   background: white;
 }
+
 h1 {
   font-size: 3rem;
-  line-height: 3rem;
-  font-family: FuturaLT-BoldOblique;
+  line-height: 3.5rem;
+  font-family: 'futura_ltheavyoblique' ,sans-serif;
   color: #FFFFFF;
   text-transform: uppercase;
   padding-top: 2rem;
@@ -90,7 +165,7 @@ h1 {
 }
 
 h2 {
-  font-family: FuturaLT-HeavyOblique;
+  font-family: 'futura_ltheavyoblique';
   font-size: 2.5rem;
   line-height: 3rem;
   color: #CA9A72;
@@ -105,7 +180,7 @@ h2 {
 h3 {
   font-size: 1.5rem;
   line-height: 1.5rem;
-  font-family: FuturaLT-HeavyOblique;
+  font-family: 'futura_ltheavyoblique';
   color: #383838;
   margin-left: auto;
   margin-right: auto;
@@ -114,7 +189,7 @@ h3 {
 }
 
 h4 {
-  font-family: FuturaLT-HeavyOblique;
+  font-family: 'futura_ltheavyoblique';
   font-size: 1.5rem;
   color: #ffffff;
   margin-left: auto;
@@ -124,7 +199,7 @@ h4 {
 }
 
 h5 {
-  font-family: FuturaLT-HeavyOblique;
+  font-family: 'futura_ltbookoblique';
   font-size: 1rem;
   color: #ffffff;
   padding-bottom: 2rem;
@@ -132,11 +207,12 @@ h5 {
   margin-left: auto;
   margin-right: auto;
   max-width: 40rem;
-  text-align: center;
+  text-align: left;
 }
 
 h6 {
-  font-family: FuturaLT-HeavyOblique;
+  /*font-family: 'futura_ltheavyoblique';*/
+  font-family: 'futura_ltbookoblique';
   font-size: 1.2rem;
   color: #CA9A72;
   line-height: 1.5rem;
@@ -146,60 +222,11 @@ h6 {
   padding-left: 3rem;
 }
 
-ul {
-  text-align: left;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-li:nth-child(even) {
-  background: #DFB694
-}
-
-li:nth-child(odd) {
-  background: #CA9A72
-}
-
-li {
-  display: block;
-  max-width: 20rem;
-  text-align: left;
-  font-size: 1rem;
-  line-height: 3rem;
-}
-
-li a {
-  display: block;
-  max-width: 10rem;
-  padding-left: 1rem;
-  text-align: left;
-  font-size: 1rem;
-  line-height: 3rem;
-  font-family: FuturaLT-BoldOblique;
-  color: black;
-}
-
-.header-welcome-big-box {
-  padding-top: 1rem;
-}
-
-.header-welcome-box {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 20rem;
-  background: #000000;
-  box-shadow: 20px 20px 50px 0px rgba(0,0,0,0.50);
-}
-
 .post {
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;
   max-width: 40rem;
@@ -237,3 +264,274 @@ li a {
   padding-left: 2rem;
   padding-right: 2rem;
 }
+
+.footer a:hover {
+  color: #CA9A72;
+}
+
+.footer h5 {
+  color: white;
+  max-width: 40rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media /* For wide desktop dawg: */ only screen and (min-width: 960px) {
+    header {
+      height: 30rem;
+      background-color: #E1E1E1;
+      background-image: url('../images/hero-tile.png');
+      background: -moz-linear-gradient(top, rgba(225,225,225,0) 0%, rgba(225,225,225,1) 100%), url('../images/hero-tile.png') no-repeat;
+      background: -webkit-linear-gradient(top, rgba(225,225,225,0) 0%,rgba(225,225,225,1) 100%), url('../images/hero-tile.png') no-repeat;
+      background: linear-gradient(to bottom, rgba(225,225,225,0) 0%,rgba(225,225,225,1) 100%), url('../images/hero-tile.png') no-repeat;
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e1e1e1', endColorstr='#e1e1e1',GradientType=0 ), url('../images/hero-tile.png') no-repeat;
+      display: flex;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-color: #E1E1E1;
+    }
+
+    img {
+      float: left;
+      display: flex;
+      width: 25rem;
+      padding-right: 1rem;
+    }
+
+    .navigation {
+      display: flex;
+      max-width: 40rem;
+    }
+
+    .header-items {
+      padding-top: 1rem;
+      display: flex;
+      align-items: center;
+      max-width: 40rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .header-welcome {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      max-width: 20rem;
+      background: #000000;
+      box-shadow: 20px 20px 50px 0px rgba(0,0,0,0.50);
+    }
+
+    li {
+      display: block;
+      float: left;
+      width: 15rem;
+      text-align: left;
+      font-size: 1rem;
+      line-height: 3rem;
+    }
+
+    ul {
+      margin-left: auto;
+      margin-right: auto;
+      width: 15rem;
+    }
+
+    li:nth-child(even) {
+      background: #DFB694
+    }
+
+    li:nth-child(odd) {
+      background: #CA9A72
+    }
+
+    li a {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      font-size: 1rem;
+      font-family: 'futura_ltheavyoblique';
+      color: black;
+    }
+  }
+
+@media /* For iPad/narrow Desktop: */ only screen and (max-width: 960px) {
+    header {
+      height: 25rem;
+      background-color: #E1E1E1;
+      background-image: url('../images/hero-tile.png');
+      background: -moz-linear-gradient(top, rgba(225,225,225,0) 0%, rgba(225,225,225,1) 100%), url('../images/hero-tile.png') no-repeat;
+      background: -webkit-linear-gradient(top, rgba(225,225,225,0) 0%,rgba(225,225,225,1) 100%), url('../images/hero-tile.png') no-repeat;
+      background: linear-gradient(to bottom, rgba(225,225,225,0) 0%,rgba(225,225,225,1) 100%), url('../images/hero-tile.png') no-repeat;
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e1e1e1', endColorstr='#e1e1e1',GradientType=0 ), url('../images/hero-tile.png') no-repeat;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-color: #E1E1E1;
+      display: none;
+    }
+
+    .header-items {
+      padding-top: 2rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .header-welcome {
+      max-width: 19rem;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1.5rem;
+      padding-right: 1rem;
+      background: #000000;
+      box-shadow: 20px 20px 50px 0px rgba(0,0,0,0.50);
+    }
+
+    .navigation {
+      display: none;
+    }
+
+      img {
+        float: left;
+        display: block;
+        width: 20rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 1rem;
+        padding-right: 1rem;
+      }
+
+      h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+        font-family: 'futura_ltbold' ,sans-serif;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        padding-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        max-width: 40rem;
+          -webkit-hyphens: none;
+          -moz-hyphens: none;
+          -ms-hyphens: none;
+          hyphens: none;
+      }
+
+      .ipad-video-header {
+          max-width: 40rem;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          padding-left: 2rem;
+          padding-right: 2rem;
+      }
+
+      .video-wrapper {
+          max-width: 40rem;
+          display: none;
+          margin-left: auto;
+          margin-right: auto;
+          padding-left: 2rem;
+          padding-right: 2rem;
+      }
+    }
+
+@media /* For iPhone: */ only screen and (max-width: 540px) {
+    header {
+      height: 25rem;
+      background-color: #E1E1E1;
+      background-image: url('../images/hero-tile.png');
+      background: -moz-linear-gradient(top, rgba(225,225,225,0) 0%, rgba(225,225,225,1) 100%), url('../images/hero-tile.png') no-repeat;
+      background: -webkit-linear-gradient(top, rgba(225,225,225,0) 0%,rgba(225,225,225,1) 100%), url('../images/hero-tile.png') no-repeat;
+      background: linear-gradient(to bottom, rgba(225,225,225,0) 0%,rgba(225,225,225,1) 100%), url('../images/hero-tile.png') no-repeat;
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e1e1e1', endColorstr='#e1e1e1',GradientType=0 ), url('../images/hero-tile.png') no-repeat;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-color: #E1E1E1;
+    }
+
+    .header-items {
+      /*padding-top: 2rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-bottom: 2rem;*/
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .header-welcome {
+      display: block;
+      max-width: 19rem;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1.5rem;
+      padding-right: 1rem;
+      background: #000000;
+      box-shadow: 20px 20px 50px 0px rgba(0,0,0,0.50);
+    }
+
+    .navigation {
+      display: none;
+    }
+
+    img {
+      float: none;
+      display: block;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+    }
+
+    .ipad-video-header {
+        max-width: 40rem;
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .iphone-video-header {
+        max-width: 40rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+  }
+
+@media /* For iPhone: */ only screen and (max-width: 350px) {
+    header {
+      height: 20rem;
+      background-color: #E1E1E1;
+      background-image: url('../images/hero-tile.png');
+      background: -moz-linear-gradient(top, rgba(225,225,225,0) 0%, rgba(225,225,225,1) 100%), url('../images/hero-tile.png') no-repeat;
+      background: -webkit-linear-gradient(top, rgba(225,225,225,0) 0%,rgba(225,225,225,1) 100%), url('../images/hero-tile.png') no-repeat;
+      background: linear-gradient(to bottom, rgba(225,225,225,0) 0%,rgba(225,225,225,1) 100%), url('../images/hero-tile.png') no-repeat;
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e1e1e1', endColorstr='#e1e1e1',GradientType=0 ), url('../images/hero-tile.png') no-repeat;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-color: #E1E1E1;
+    }
+
+    h1 {
+      font-size: 2rem;
+      line-height: 2rem;
+      font-family: 'futura_ltbold' ,sans-serif;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      padding-top: 2rem;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+      max-width: 40rem;
+        -webkit-hyphens: none;
+        -moz-hyphens: none;
+        -ms-hyphens: none;
+        hyphens: none;
+    }
+  }
